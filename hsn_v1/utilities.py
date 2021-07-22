@@ -3,7 +3,7 @@ import cv2
 import keras
 import os
 import matplotlib
-matplotlib.use("TkAgg")
+# matplotlib.use("TkAgg")
 import matplotlib.pyplot as plt
 from skimage import measure, filters
 import math
