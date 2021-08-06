@@ -10,6 +10,9 @@
     - sudo apt-get install g++ (확실)
     - pip install cython (불확실)
     - pip install pandas
+  - GPU 버전의 경우 toolkit 설치
+  - conda install cudatoolkit=10.0
+  - conda install cudnn=7.6.5
 
 ## Git setup
 - git clone https://github.com/jongtaeklee/hsn_v1.git
@@ -27,3 +30,8 @@
   - c.NotebookApp.allow_origin = '*' #allow all origins
   - c.NotebookApp.ip = '0.0.0.0' # listen on all IPs
 - jupyter notebook password
+
+## SVS File I/O
+- pip install openslide-python
+  - install openslide python
+  - 
