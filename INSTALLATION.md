@@ -22,8 +22,13 @@
   - 아이디 비번: jongtaeklee@gmail.com / 1!
 
 ## jupyter setup
-- conda install ipykernel
+- conda activate hsn36
+- conda install ipykernel 
 - python -m ipykernel install --user --name hsn36 --display-name "hsn36"
+  - 위의 작업으로 base로 시작한 jupyter에서 hsn36의 kernel 접근이 가능해짐
+  - base에서 실행한 jupyter의 경우 아래의 작업은 필요 없음.
+- jupyter kernelspec uninstall hsn36
+  - 만든 kernel을 지우고 싶을때
 - jupyter notebook --generate-config
 - nano ~~/jupyter/jupyter_notebook_config.py
   - c.NotebookApp.allow_origin = '*' #allow all origins

@@ -5,7 +5,7 @@ from tqdm import tqdm
 import tifffile, cv2
 import openslide
 
-home_dir = 'D:/Data/Pathology/PIAP 2020/xml2mask_test'
+home_dir = 'D:/Data/Pathology/PAIP 2020/xml2mask_test'
 
 wsi_load_dir = os.path.join(home_dir, 'wsi_folder')
 xml_load_dir = os.path.join(home_dir, 'xml_folder')
@@ -13,7 +13,7 @@ wsi_fns = sorted(glob.glob(wsi_load_dir + '*.svs') + glob.glob(wsi_load_dir + '*
 xml_fns = sorted(glob.glob(xml_load_dir + '*.xml') + glob.glob(xml_load_dir + '*.XML'))
 level = 2
 div = 4**level                             ## Level0 scale to Level2 scale
-assert len(wsi_fns) == len(xml_fns) == 47  ## the number of training_data WSI pool
+assert len(wsi_fns) == len(xml_fns) == 1  ## the number of training_data WSI pool
 
 save_dir = f'./mask_img_l{level}/'
 os.makedirs(save_dir, exist_ok=True)
